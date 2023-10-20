@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your Marks + percentage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="container">
+            <div class="box">
+            <form onsubmit="calculateMarks(event)" class="calculate-form" id="calculateForm">
+                <input type="number" required min="0" max="100" name="maths" placeholder="Maths" >
+                <input type="number" required min="0" max="100" name="english" placeholder="English" >
+                <input type="number" required min="0" max="100" name="hindi" placeholder="Hindi" >
+                <input type="number" required min="0" max="100" name="science" placeholder="Science" >
+                
+                    <button  type="submit" class="btn">Calculate</button>
+            
+            </form>
+            <p id="result" class="result">
+                
+            </p>
+            </div>
+            <h1 class="head">
+                Calculate Your <span>Percentage</span>
+            </h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

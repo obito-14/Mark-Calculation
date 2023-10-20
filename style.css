@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Lato&family=Oswald&family=Poppins:ital,wght@1,300&family=Roboto&family=Roboto+Condensed:ital@1&family=Roboto+Mono:ital@1&family=Ubuntu&display=swap");
+
+:root {
+  --primary: #393e3e;
+  --secondary: #145c72;
+  --secondary-light: #00a0d1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+.background {
+  background-image: url(/image/backpng.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  width: 98vw;
+}
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.box {
+  margin-top: 60px;
+  width: 95%;
+  height: 50rem;
+  background-color: var(--primary);
+  border-radius: 12px;
+  border: 2px solid var(--secondary);
+}
+.head {
+  margin-left: 20px;
+  padding-top: 10px;
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  font-weight: 600;
+}
+span {
+  font-size: 6rem;
+}
+.calculate-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 20px;
+}
+input {
+  height: 4.4rem;
+  padding: 0 8px;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid black;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 100%;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 1.3rem;
+}
+input:focus-visible {
+  outline: 2px solid var(--secondary);
+  border: 2px solid var(--secondary);
+}
+.calculate-form button {
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  left: 55%;
+}
+.btn {
+  width: 16rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  opacity: 1;
+  background-color: var(--secondary-light);
+}
+.result {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+@media (max-width: 876px) {
+  .calculate-form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .calculate-form button {
+    position: relative;
+    left: 2%;
+  }
+  .head {
+    width: 90%;
+    font-size: 3rem;
+  }
+  span {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 432px) {
+  .container {
+    width: 100%;
+  }
+}
